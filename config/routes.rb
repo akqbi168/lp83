@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'homes#top'
+  root to: 'homes#top'
+
+  get 'kanri' => "homes#kanri"
+
+  get 'kanri/new' => "homes#new"
+
+  resources :news, only: [:create, :edit, :update, :destroy]
+  resources :partners, only: [:create, :edit, :update, :destroy]
 
 end
