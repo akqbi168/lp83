@@ -139,6 +139,18 @@ h4 {
   z-index: 100;
 }
 
+.header-right {
+
+}
+
+.dummy-text {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 11px;
+  color: orange;
+  background-color: rgba(0,0,0,1);
+}
 
 
 /* top */
@@ -214,9 +226,14 @@ h4 {
   line-height: 2em;
 }
 
-.about-img {
+.about-img-box {
   width: 780px;
   margin: 0 auto;
+}
+
+.about-img {
+  width: 50%;
+  float: left;
 }
 
 
@@ -407,6 +424,12 @@ h4 {
 
 
 
+/* スマートフォンサイズ(426px)より大きい場合 */
+@media screen and (min-width:426px) {
+  #sp-only {
+    display: none;
+  }
+}
 
 
 
@@ -514,6 +537,18 @@ h4 {
     /*z-index: 100;*/
   }
 
+  .header-right {
+  }
+
+  .dummy-text {
+    /*position: absolute;*/
+    top: 10px;
+    left: 160px;
+    font-size: 10px;
+    /*color: orange;*/
+    /*background-color: rgba(0,0,0,1);*/
+    line-height: 11px;
+  }
 
 
   /* top */
@@ -581,27 +616,34 @@ h4 {
     font-size: 14px;
     margin-left: 0px;
     /*line-height: 2em;*/
+    padding-left: 3em;
+    text-indent: -3em;
   }
 
   .about-box-text-sub {
     font-size: 14px;
-    /*margin-left: 190px;*/
+    margin-left: 3em;
     /*margin-bottom: 60px;*/
     /*line-height: 2em;*/
   }
 
-  .about-img {
+  .about-img-box {
     width: 90vw;
     /*margin: 0 auto;*/
+  }
+
+  .about-img {
+    width: 100%;
+    float: none;
   }
 
 
 
   /* news */
   .news-container {
-    width: 90vw;
+    width: 100vw;
     /*margin: 0 auto;*/
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .news-title {
@@ -618,7 +660,7 @@ h4 {
 
   .news-text-date {
     /*font-weight: 700;*/
-    /*width: 90px;*/
+    width: auto;
     /*margin-right: 30px;*/
   }
 
@@ -629,9 +671,9 @@ h4 {
 
   /* CAST */
   .cast-container {
-    width: 90vw;
+    width: 100vw;
     /*margin: 0 auto;*/
-    padding: 0 10px;
+    padding: 0 20px;
   }
   .cast-tag {
     /*width: 169px;*/
@@ -675,9 +717,9 @@ h4 {
 
   /* FOOD&DRINK */
   .fooddrink-container {
-    width: 90vw;
+    width: 100vw;
     /*margin: 0 auto;*/
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .fd-img {
@@ -697,9 +739,9 @@ h4 {
 
   /* ACCESS */
   .access-container {
-    width: 90vw;
+    width: 100vw;
     /*margin: 0 auto;*/
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   .access-map {
