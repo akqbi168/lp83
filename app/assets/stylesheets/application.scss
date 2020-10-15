@@ -478,7 +478,7 @@ h4 {
   }
 
   #title {
-    margin: 0px auto;
+    margin: 0px auto 50px;
     /*padding-top: 100px;*/
   }
 
@@ -650,10 +650,10 @@ h4 {
   }
 
   .news-box {
-    width: 90vw;
+    width: 100%;
     /*margin: 0 auto;*/
     /*border-bottom: 1px solid #555;*/
-    /*padding: 30px 0;*/
+    padding: 10px 0;
     /*font-size: 14px;*/
     /*letter-spacing: 0.15em;*/
   }
@@ -662,9 +662,13 @@ h4 {
     /*font-weight: 700;*/
     width: auto;
     /*margin-right: 30px;*/
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    margin-top: 10px;
   }
 
   .news-text-title {
+    letter-spacing: 0.05em;
   }
 
 
