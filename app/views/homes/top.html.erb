@@ -82,12 +82,9 @@
     <div class="clearfix">
       <% @partners.where(tag_id: 1).each do |p| %>
         <div class="cast-box">
-          <div class="cast-image">
-            <%= link_to p.link do %>
-              <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
-              <%#= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", size: "480x228", class: "" %>
-            <% end %>
-          </div>
+          <%= link_to p.link do %>
+            <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
+          <% end %>
           <div class="cast-name">
             <%= p.name %>
           </div>
@@ -106,12 +103,9 @@
     <div class="clearfix">
       <% @partners.where(tag_id: 2).each do |p| %>
         <div class="cast-box">
-          <div class="cast-image">
-            <%= link_to p.link do %>
-              <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
-              <%#= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", size: "480x228", class: "" %>
-            <% end %>
-          </div>
+          <%= link_to p.link do %>
+            <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
+          <% end %>
           <div class="cast-name">
             <%= p.name %>
           </div>
@@ -130,12 +124,9 @@
     <div class="clearfix">
       <% @partners.where(tag_id: 3).each do |p| %>
         <div class="cast-box">
-          <div class="cast-image">
-            <%= link_to p.link do %>
-              <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
-              <%#= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", size: "480x228", class: "" %>
-            <% end %>
-          </div>
+          <%= link_to p.link do %>
+            <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
+          <% end %>
           <div class="cast-name">
             <%= p.name %>
           </div>
@@ -154,12 +145,9 @@
     <div class="clearfix">
       <% @partners.where(tag_id: 4).each do |p| %>
         <div class="cast-box">
-          <div class="cast-image">
-            <%= link_to p.link do %>
-              <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
-              <%#= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", size: "480x228", class: "" %>
-            <% end %>
-          </div>
+          <%= link_to p.link do %>
+            <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
+          <% end %>
           <div class="cast-name">
             <%= p.name %>
           </div>
@@ -193,12 +181,9 @@
     <div class="clearfix">
       <% @partners.where(tag_id: 5).each do |p| %>
         <div class="cast-box">
-          <div class="cast-image">
             <%#= link_to p.link do %>
               <%= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", class: "cast-image" %>
-              <%#= attachment_image_tag p, :partner_image, format: 'jpeg', fallback: "", size: "480x228", class: "" %>
             <%# end %>
-          </div>
           <div class="cast-name">
             <%= p.name %>
           </div>

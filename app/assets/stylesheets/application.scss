@@ -54,7 +54,7 @@ h2:before {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -30px; /*下線の上下位置調整*/
+  bottom: -20px; /*下線の上下位置調整*/
   width: 50px; /*下線の幅*/
   height: 1px; /*下線の太さ*/
   -moz-transform: translateX(-50%);
@@ -300,6 +300,7 @@ h4 {
 
 .cast-name {
   width: 480px;
+  font-size: 16px;
   text-align: center;
   margin: 5px 0 0;
 }
@@ -677,13 +678,13 @@ h4 {
   .cast-container {
     width: 100vw;
     /*margin: 0 auto;*/
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .cast-tag {
     /*width: 169px;*/
     /*height: 32px;*/
     /*border: 1px solid #999;*/
-    /*margin: 3em auto;*/
+    margin-bottom: 40px;
     /*text-align: center;*/
     /*vertical-align: center;*/
     /*font-size: 20px;*/
@@ -691,7 +692,8 @@ h4 {
   }
 
   .cast-box {
-    width: 300px;
+    width: 100%;
+    margin: 0;
     /*margin: 0 0 30px;*/
     /*padding: 0 10px;*/
     float: none;
@@ -699,20 +701,21 @@ h4 {
   }
 
   .cast-image {
-    width: 280px;
+    width: 100%;
     height: auto;
     /*padding-bottom: -5px;*/
     /*display: block;*/
   }
 
   .cast-name {
-    width: 280px;
+    width: 100%;
+    font-size: 14px;
     /*text-align: center;*/
     /*margin: 5px 0 0;*/
   }
 
   .kana-order {
-    /*font-size: 12px;*/
+    font-size: 11px;
     /*text-align: right;*/
     /*margin: 0 auto;*/
   }
@@ -723,13 +726,14 @@ h4 {
   .fooddrink-container {
     width: 100vw;
     /*margin: 0 auto;*/
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .fd-img {
-    width: 90vw;
+    width: 100%;
     /*display: block;*/
     /*margin: 0 auto 60px;*/
+    margin: 0 auto 30px;
   }
 
 
