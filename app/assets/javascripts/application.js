@@ -16,16 +16,12 @@
 //= require turbolinks
 //= require_tree .
 
-  $(document).ready(function() {
-    $("p").text("jQuery稼働テスト(稼働中)");
-  });
-
 
 
   //画面高さ取得
   $(window).load(function() {
     h = $(window).height();
-    $('#container').css('height', h + 'px');
+    $('#container').css('min-height', h + 'px');
   });
 
   //画面リサイズ時の高さ取得
