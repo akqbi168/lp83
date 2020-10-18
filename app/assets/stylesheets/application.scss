@@ -468,7 +468,7 @@ h4 {
   * {
     /* 画像 */
     /*background-image: url("/images/fireworks.jpg");*/
-    background-size: auto 100%;
+    background-size: auto 100vh;
     /*background-position: center top;*/
     /*background-repeat: no-repeat;*/
     background-attachment: fixed;
@@ -592,8 +592,8 @@ h4 {
 
   .top-img {
     width: 90vw;
-    min-height: 100vh;
-    margin: 200px auto;
+    /*min-height: 100vh;*/
+    margin: calc((100vh - (90vw) )/2) auto;
     /*margin: calc((100vh - 430px)/2) auto;*/
   }
 
