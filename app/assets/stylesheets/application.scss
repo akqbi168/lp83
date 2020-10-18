@@ -156,7 +156,7 @@ h4 {
 /* top */
 .top-container {
   width: 100%;
-  background-color: rgba(0,0,0,0.6);
+  /*background-color: rgba(0,0,0,0.6);*/
   background-blend-mode: hard-light;
 }
 
@@ -455,20 +455,20 @@ h4 {
     display: none;
   }
 
-  html,
-  body{
-    width: 100%;
-    height: 100%; /* ★大事なのは「100%」 */
+  /*html,*/
+  /*body{*/
+    /*width: 100%;*/
+    /*height: 100%;  ★大事なのは「100%」 */
     /*overflow: hidden;  ★上の次に大事（必要に応じて） */
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*border: none;*/
+  /*}*/
 
   * {
     /* 画像 */
     /*background-image: url("/images/fireworks.jpg");*/
-    background-size: auto 100vh;
+    background-size: auto 100%;
     /*background-position: center top;*/
     /*background-repeat: no-repeat;*/
     background-attachment: fixed;
@@ -579,7 +579,7 @@ h4 {
   /* top */
   .top-container {
     /*width: 100%;*/
-    /*height: 100vh;*/
+    height: 100vh;
     /*background-color: rgba(0,0,0,0.6);*/
     /*background-blend-mode: hard-light;*/
   }
@@ -593,7 +593,6 @@ h4 {
   .top-img {
     width: 90vw;
     margin: 200px auto;
-    /*margin: calc((100vh - 430px)/2) auto;*/
     /*margin: calc((100vh - 430px)/2) auto;*/
   }
 
