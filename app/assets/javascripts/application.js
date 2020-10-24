@@ -29,4 +29,9 @@
   })
 
 
+// var vh=window.innerHeight;
+// document.getElementById('box').style.height=vh+'px';
+
+// jQueryを使うなら
+// $('#box').css('height',$(window).height());
 
