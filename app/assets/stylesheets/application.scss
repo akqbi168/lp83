@@ -52,8 +52,6 @@ h2 {
     letter-spacing: 0.3em;
     text-align: center;
     position: relative;
-    background-color: rgba(0,0,0,0.6);
-    background-blend-mode: color;
   }
 
 h2:before {
@@ -79,6 +77,8 @@ h4 {
 #title {
   margin: 70px auto;
   padding-top: 100px;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: color;
 }
 
 
