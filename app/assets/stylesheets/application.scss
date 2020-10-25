@@ -8,18 +8,32 @@
   padding: 0;
 
   /* 画像 */
-  background-image: url("/images/fireworks.jpg");
-  background-size: 100% auto;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /*background-image: url("/images/fireworks.jpg");*/
+  /*background-size: 100% auto;*/
+  /*background-position: center top;*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
 
   /* 背景透過 */
-  background-color: rgba(0,0,0,0.6);
-  background-blend-mode: color;
+/*  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: color;*/
 
   color: #FFFFFF;
   font-family: 'Hiragino Kaku Gothic', Avenir, Corbel, Osaka, sans-serif;
+}
+
+body::before {
+  content: "";
+  background: url("/images/fireworks.jpg") no-repeat center center;
+  background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  transform: translateZ(0);
 }
 
 img {
@@ -34,12 +48,6 @@ a {
   content: "";
   display: block;
   clear: both;
-}
-
-.blk-opc {
-  background-color: rgba(0,0,0,0.6);
-  background-blend-mode: color;
-  display: inline-block;
 }
 
 .underline {
@@ -58,7 +66,7 @@ h2:before {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -20px; /*下線の上下位置調整*/
+  bottom: -26px; /*下線の上下位置調整*/
   width: 50px; /*下線の幅*/
   height: 1px; /*下線の太さ*/
   -moz-transform: translateX(-50%);
@@ -74,11 +82,16 @@ h4 {
   margin-top: 10px;
 }
 
-#title {
-  margin: 70px auto;
-  padding-top: 100px;
+/* top以外に指定 */
+.wrapper {
   background-color: rgba(0,0,0,0.6);
   background-blend-mode: color;
+  padding: 80px 0;
+  display: block;
+}
+
+#title {
+  margin: 0px auto 70px;
 }
 
 
@@ -146,7 +159,6 @@ h4 {
 }
 
 .header-right {
-
 }
 
 .dummy-text {
@@ -161,7 +173,7 @@ h4 {
 
 /* top */
 .top-container {
-  width: 100%;
+  width: 100vw;
   /*background-color: rgba(0,0,0,0.6);*/
   background-blend-mode: hard-light;
 }
@@ -177,7 +189,7 @@ h4 {
 }
 
 .top-opacity {
-  background-color: rgba(255,255,255,0.0);
+  /*background-color: rgba(255,255,255,0.0);*/
   /*background-blend-mode: lighten;*/
 }
 
@@ -185,11 +197,9 @@ h4 {
 
 /* about */
 .about-container {
-  width: 1000px;
+  width: 100vw;
   margin: 0 auto;
-}
-
-.about-title {
+  /*padding: 0 calc((100vw - 1000px) / 2);*/
 }
 
 .about-text {
@@ -472,6 +482,10 @@ h4 {
   /*}*/
 
   * {
+    /*box-sizing: border-box;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+
     /* 画像 */
     /*background-image: url("/images/fireworks.jpg");*/
     background-size: auto 100vh;
@@ -479,13 +493,27 @@ h4 {
     /*background-position: center top;*/
     /*background-repeat: no-repeat;*/
     /*background-attachment: fixed;*/
+
+    /* 背景透過 */
+    /*background-color: rgba(0,0,0,0.6);*/
+    /*background-blend-mode: color;*/
+
+    /*color: #FFFFFF;*/
+    /*font-family: 'Hiragino Kaku Gothic', Avenir, Corbel, Osaka, sans-serif;*/
   }
 
-/*  #bg {
-    background: url("/images/fireworks.jpg");
+/*  body::before {
+    content: "";
+    background: url("/images/fireworks.jpg") no-repeat center center;
     background-size: cover;
-    width: 100%;
-    padding-top: 1%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: translateZ(0);
   }*/
 
   h2 {
@@ -516,9 +544,16 @@ h4 {
     /*margin-top: 10px;*/
   }
 
+  /* top以外に指定 */
+  .wrapper {
+    /*background-color: rgba(0,0,0,0.6);*/
+    /*background-blend-mode: color;*/
+    padding: 40px 0;
+    /*display: block;*/
+  }
+
   #title {
     margin: 0px auto 50px;
-    /*padding-top: 100px;*/
   }
 
 
@@ -618,9 +653,6 @@ h4 {
     width: 100vw;
     /*margin: 0 auto;*/
     padding: 0 20px;
-  }
-
-  .about-title {
   }
 
   .about-text {
@@ -771,7 +803,7 @@ h4 {
     width: 100%;
     /*display: block;*/
     /*margin: 0 auto 60px;*/
-    margin: 0 auto 30px;
+    margin: 60px auto 30px;
   }
 
 
