@@ -1,11 +1,13 @@
-<h1 style="font-size: 50px; text-align: center; margin-top: 100px">【管理画面】</h1>
+<div class="wrapper">
+
+<h1 style="font-size: 50px; text-align: center; margin-top: 50px">【管理画面】</h1>
 
   <div class="news-container" id="news">
     <h2 id="title" class="news-title">
       ＮＥＷＳ（管理画面）
     </h2>
 
-    <%= button_to "NEWS新規作成", {controller: 'homes', action: 'new'}, {method: :get, class: "create-link"} %>
+    <%= button_to "NEWS 新規作成", {controller: 'homes', action: 'new'}, {method: :get, class: "create-link"} %>
 
     <% @newsall.each do |news| %>
       <div class="news-box">
@@ -41,7 +43,7 @@
       ＰＡＲＴＮＥＲＳ（管理画面）
     </h2>
 
-    <%= button_to "PARTNERS新規作成", {controller: 'homes', action: 'new'}, {method: :get, class: "create-link"} %>
+    <%= button_to "PARTNERS 新規作成", {controller: 'homes', action: 'new'}, {method: :get, class: "create-link"} %>
 
     <% @partnersall.each do |p| %>
       <div class="kanri-p clearfix">
@@ -69,3 +71,5 @@
     <% end %>
 
   </div>
+
+</div>
