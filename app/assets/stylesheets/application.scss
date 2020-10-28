@@ -354,9 +354,37 @@ h4 {
 .ticket-container {
   width: 1000px;
   margin: 0 auto;
-  height: 1000px;
 }
 
+.ticket-area {
+  max-width: 425px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border: 2px solid #FFF;
+  border-radius: 3%;
+}
+
+.ticket-box {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.ticket-box-text {
+  font-size: 17px;
+  letter-spacing: 0.1em;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h20px {
+  height: 2em;
+}
+
+.h100px {
+  height: 10em;
+}
 
 
 /* ACCESS */
@@ -869,6 +897,8 @@ h4 {
   .ticket-container {
     width: 90vw;
   }
+
+
 
 
 

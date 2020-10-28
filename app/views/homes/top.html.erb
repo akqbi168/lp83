@@ -214,26 +214,45 @@
       <p class="cast-tag">
         CONTACT
       </p>
+
       <p class="about-text" style="margin-bottom: 40px">
         連日たくさんのお問い合わせいただいております。<br>
         以下のフォームよりお気軽にご連絡ください。
       </p>
 
+      <div class="ticket-area">
+
+        <form class="ticket-box-text">
+          <div class="ticket-box">
+            <label for="name">お名前</label><br>
+            <input id="name" type="text" name="name" placeholder="ポマト　太郎" class="w100 h20px">
+          </div>
+
+          <div class="ticket-box">
+            <label for="email">メールアドレス</label><br>
+            <input id="email" type="text" name="name" placeholder="example@pomato.co.jp" class="w100 h20px"><br>
+          </div>
+
+          <div class="ticket-box">
+            <label for="msg">お問い合わせ内容</label><br>
+            <textarea id="msg" name="name" placeholder="お気軽にお問い合わせください。" class="w100 h100px"></textarea>
+          </div>
+
+          <%= button_to "送信", {type: "submit", name: "button", value: "送信", class: ""} %>
+        </form>
+
+      </div>
+
       <%#= form_for @partner do |f| %>
 
-        <div id="pc-only" style="width: 500px; height:500px; margin:0 auto">
-        <div id="sp-only" style="width: 50vw; height: auto; margin:0 auto">
-          <h4>お名前</h4>
+          <!-- <h4>お名前</h4> -->
           <%#= f.text_field :link, style: "width:500px" %>
 
-          <br><br>
-          <h4>お問い合わせ内容</h4>
+          <!-- <h4>お問い合わせ内容</h4> -->
           <%#= f.text_area :name, style: "width:500px; height: 200px" %>
 
-          <br><br>
+          <!-- <br><br> -->
           <%#= f.submit '送信' %>
-        </div>
-        </div>
       <%# end %>
 
     </div>
