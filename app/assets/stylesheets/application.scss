@@ -403,6 +403,48 @@ h4 {
 
 
 /* kanri */
+.kanri-title {
+  font-size: 48px;
+  text-align: center;
+}
+
+.kanri-subtitle {
+  padding-top: 70px;
+  font-weight: 700;
+}
+
+.kanri-news-box {
+  width: 890px;
+  margin: 0 auto;
+  border-bottom: 1px solid #555;
+  padding: 30px 0;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+}
+
+.published {
+  color: lightgreen;
+}
+
+.draft {
+  color: orange;
+}
+
+.kanri-p {
+  margin: 50px 0;
+}
+
+.kanri-p-image {
+  width: 240px;
+  height: 114px;
+  float: left;
+}
+
+.kanri-p-text {
+  margin: 0 0 0 50px;
+  float: left;
+}
+
 .create-link {
   display: block;
   margin: 20px auto;
@@ -415,6 +457,11 @@ h4 {
 .create-news {
   width: 500px;
   margin: 100px auto;
+}
+
+.create-subtitle {
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .create-news-date {
@@ -431,35 +478,16 @@ h4 {
   margin-right: 30px;
 }
 
+.submit-link {
+  background-color: rgba(120, 120, 120, 0.6);
+}
+
 .create-partner-link {
   width: 500px;
 }
 
-.published {
-  color: lightgreen;
-}
-
-.draft {
-  color: orange;
-}
-
-.kanri-p {
-  margin: 50px 0;
-}
-
-.kanri-p-text {
-  margin: 0 0 0 50px;
-  float: left;
-}
-
-.kanri-p-image {
-  width: 240px;
-  height: 114px;
-  float: left;
-}
-
-.submit-link {
-  background-color: rgba(120, 120, 120, 0.6);
+.color-black {
+  color: black;
 }
 
 
@@ -874,32 +902,30 @@ h4 {
 
 
   /* kanri */
+  .kanri-title {
+    font-size: 40px;
+    /*text-align: center;*/
+  }
+
+  .kanri-subtitle {
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    /*padding-top: 70px;*/
+    /*font-weight: 700;*/
+  }
+
   .create-link {
     /*display: block;*/
     /*margin: 20px auto;*/
   }
 
-  .create-news {
-    width: 300px;
-    /*margin: 100px auto;*/
-  }
-
-  .create-news-date {
-    /*width: 60px;*/
-  }
-
-  .create-news-title {
-    width: 300px;
-  }
-
-  .news-text-edit {
-    /*font-weight: 100;*/
-    /*width: 90px;*/
-    /*margin-right: 30px;*/
-  }
-
-  .create-partner-link {
-    width: 300px;
+  .kanri-news-box {
+    width: auto;
+    /*margin: 0 auto;*/
+    /*border-bottom: 1px solid #555;*/
+    padding: 10px 10px;
+    /*font-size: 14px;*/
+    /*letter-spacing: 0.15em;*/
   }
 
   .published {
@@ -914,14 +940,17 @@ h4 {
     /*margin: 50px 0;*/
   }
 
-  .kanri-p-text {
-    /*margin: 0 0 0 50px;*/
-    float: left;
+  .kanri-p-image {
+    width: 50%;
+    min-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    /*float: left;*/
   }
 
-  .kanri-p-image {
-    /*width: 240px;*/
-    /*height: 114px;*/
+  .kanri-p-text {
+    font-size: 15px;
+    margin: 0 0 0 10%;
     /*float: left;*/
   }
 
@@ -929,9 +958,38 @@ h4 {
     /*background-color: rgba(120, 120, 120, 0.6);*/
   }
 
+  .create-news {
+    width: 90%;
+    /*margin: 100px auto;*/
+  }
 
+  .create-subtitle {
+    /*font-weight: 700;*/
+    /*letter-spacing: 0.01em;*/
+    font-size: 24px;
+  }
 
+  .create-news-date {
+    /*width: 60px;*/
+  }
 
+  .create-news-title {
+    width: 100%;
+  }
+
+  .news-text-edit {
+    /*font-weight: 100;*/
+    /*width: 90px;*/
+    /*margin-right: 30px;*/
+  }
+
+  .create-partner-link {
+    width: 100%;
+  }
+
+  .color-black {
+    /*color: black;*/
+  }
 
 
 

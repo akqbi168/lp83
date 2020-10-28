@@ -1,32 +1,32 @@
 <div class="wrapper">
+
+  <h1 class="kanri-title">
+    【新規投稿画面】
+  </h1>
+
   <div class="create-news">
-    <h1>新規投稿（ニュース）</h1>
-    <!-- form_for部分 -->
-    <%#= form_for @news, :url => {controller: "news", action: "new"} do |f| %>
+    <h2 id="title" class="create-subtitle">新規投稿（ニュース）</h2>
     <%= form_for @news do |f| %>
 
       <h4>日付</h4>
       <%#= date_field_tag :date %>
-      <%= f.number_field :year, class: "create-news-date" %>年　
-      <%= f.number_field :month, class: "create-news-date" %>月　
-      <%= f.number_field :date, class: "create-news-date" %>日
+      <%= f.number_field :year, class: "create-news-date color-black" %>年　
+      <%= f.number_field :month, class: "create-news-date color-black" %>月　
+      <%= f.number_field :date, class: "create-news-date color-black" %>日
 
       <h4>タイトル</h4>
-      <%= f.text_area :title, class: "create-news-title" %>
+      <%= f.text_area :title, class: "create-news-title color-black" %>
 
       <h4>公開非公開</h4>
-      <%= f.select :published, {'公開': 1, '下書き': 0}, {include_blank: ''}, { class: '' , required: true } %>
+      <%= f.select :published, {'公開': 1, '下書き': 0}, {include_blank: '------'}, { class: 'color-black' , required: true } %>
 
       <%= f.submit '投稿', class: "submit-link" %>
 
     <% end %>
-
   </div>
 
   <div class="create-news">
-    <h1>新規投稿（パートナー情報）</h1>
-    <!-- form_for部分 -->
-    <%#= form_for @news, :url => {controller: "news", action: "new"} do |f| %>
+    <h2 id="title" class="create-subtitle">新規投稿（パートナー情報）</h2>
     <%= form_for @partner do |f| %>
 
       <h4>画像</h4>
@@ -36,16 +36,16 @@
         </div>
 
       <h4>リンク先</h4>
-      <%= f.text_field :link, class:"create-partner-link" %>
+      <%= f.text_field :link, class:"create-partner-link color-black" %>
 
       <h4>名前</h4>
-      <%= f.text_field :name, class:"create-partner-link" %>
+      <%= f.text_field :name, class:"create-partner-link color-black" %>
 
       <h4>タグ</h4>
-      <%= f.select :tag_id, Partner.tag_ids.keys, { prompt: '選択してください' } %>
+      <%= f.select :tag_id, Partner.tag_ids.keys, { prompt: '選択してください' }, class:"color-black" %>
 
       <h4>公開非公開</h4>
-      <%= f.select :published, {'公開': 1, '下書き': 0}, {include_blank: ''}, { class: '' , required: true } %>
+      <%= f.select :published, {'公開': 1, '下書き': 0}, {include_blank: '------'},{ class: 'color-black', required: true } %>
 
       <%= f.submit '保存', class: "submit-link" %>
 
