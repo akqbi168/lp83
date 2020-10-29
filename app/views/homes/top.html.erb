@@ -225,20 +225,20 @@
         <form class="ticket-box-text">
           <div class="ticket-box">
             <label for="name">お名前</label><br>
-            <input id="name" type="text" name="name" placeholder="ポマト　太郎" class="w100 h20px">
+            <input id="name" type="text" name="name" placeholder="ポマト　太郎" class="w100 h20px blk">
           </div>
 
           <div class="ticket-box">
             <label for="email">メールアドレス</label><br>
-            <input id="email" type="text" name="name" placeholder="example@pomato.co.jp" class="w100 h20px"><br>
+            <input id="email" type="text" name="name" placeholder="example@pomato.co.jp" class="w100 h20px blk"><br>
           </div>
 
           <div class="ticket-box">
             <label for="msg">お問い合わせ内容</label><br>
-            <textarea id="msg" name="name" placeholder="お気軽にお問い合わせください。" class="w100 h100px"></textarea>
+            <textarea id="msg" name="name" placeholder="お気軽にお問い合わせください。" class="w100 h100px blk"></textarea>
           </div>
 
-          <%= button_to "送信", {type: "submit", name: "button", value: "送信", class: ""} %>
+          <%= button_to "送信", {type: "submit", name: "button", value: "送信"}, class: "ticket-area-button" %>
         </form>
 
       </div>
