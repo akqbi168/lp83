@@ -15,6 +15,7 @@ class PartnersController < ApplicationController
 
   def edit
     @partner = Partner.find(params[:id])
+    @partners = Partner.all
   end
 
   def update

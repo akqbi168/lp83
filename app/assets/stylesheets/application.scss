@@ -95,6 +95,10 @@ h4 {
   display: block;
 }
 
+.min-h-100 {
+  min-height: 100vh;
+}
+
 #title {
   margin: 0px auto 70px;
 }
@@ -312,13 +316,20 @@ h4 {
   padding: 0 10px;
   float: left;
   display: inline;
+  /*画像エフェクト*/
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cast-box:hover {
+  opacity: 0.6;
+  transition-duration: 0.4s;
 }
 
 .cast-image {
   width: 480px;
   height: 228px;
   padding-bottom: -5px;
-  display: block;
 }
 
 .cast-name {
@@ -530,16 +541,33 @@ h4 {
 
 .submit-link {
   background-color: rgba(120, 120, 120, 0.6);
+  margin-left: 10px;
 }
 
 .create-partner-link {
   width: 500px;
 }
 
-.color-black {
-  color: black;
+.partner-edit-image-box {
+  width: 160px;
+  float: right;
 }
 
+.partner-edit-image {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 0px 5px #555);
+  /*filter: drop-shadow(2px 4px 6px #000);*/
+}
+
+.partner-edit-image-text {
+  width: 100%;
+  font-size: 11px;
+}
+
+.text-center {
+  text-align: center;
+}
 
 
 
@@ -646,7 +674,7 @@ h4 {
   }
 
   .min-h-100 {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
   }
 
   #title {
@@ -865,13 +893,20 @@ h4 {
     /*padding: 0 10px;*/
     float: none;
     /*display: inline;*/
+    /*画像エフェクト*/
+    /*overflow: hidden;*/
+    /*cursor: pointer;*/
+  }
+
+  .cast-box:hover {
+    /*opacity: 0.6;*/
+    /*transition-duration: 0.4s;*/
   }
 
   .cast-image {
     width: 100%;
     height: auto;
     /*padding-bottom: -5px;*/
-    /*display: block;*/
   }
 
   .cast-name {
@@ -1062,6 +1097,28 @@ h4 {
 
   .submit-link {
     /*background-color: rgba(120, 120, 120, 0.6);*/
+    /*margin-left: 10px;*/
+  }
+
+  .partner-edit-image-box {
+    /*width: 160px;*/
+    /*float: right;*/
+  }
+
+  .partner-edit-image {
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*filter: drop-shadow(0px 0px 5px #555);*/
+    /*filter: drop-shadow(2px 4px 6px #000);*/
+  }
+
+  .partner-edit-image-text {
+    /*width: 100%;*/
+    /*font-size: 11px;*/
+  }
+
+  .text-center {
+    /*text-align: center;*/
   }
 
   .create-news {
@@ -1091,10 +1148,6 @@ h4 {
 
   .create-partner-link {
     width: 100%;
-  }
-
-  .color-black {
-    /*color: black;*/
   }
 
 
