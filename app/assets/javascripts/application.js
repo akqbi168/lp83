@@ -50,7 +50,7 @@ $(document).ready(function(){
     var adjust = -100;
     var target = $(hash);
     var position = target.offset().top + adjust;
-    $('body,html').stop().animate({scrollTop:position}, 1000);
+    $('body,html').stop().animate({scrollTop:position}, 1200);
   }
 })
 
