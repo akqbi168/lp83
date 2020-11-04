@@ -1,10 +1,9 @@
 class NewsController < ApplicationController
 
-  def new
-    @news = News.new
-    date = params[:date]
-
-  end
+  # def new
+    # @news = News.new
+    # date = params[:date]
+  # end
 
   def create
     @news = News.new(news_params)

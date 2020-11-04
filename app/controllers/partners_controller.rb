@@ -1,8 +1,8 @@
 class PartnersController < ApplicationController
 
-  def new
-    @partner = Partner.new
-  end
+  # def new
+    # @partner = Partner.new
+  # end
 
   def create
     @partner = Partner.new(partner_params)

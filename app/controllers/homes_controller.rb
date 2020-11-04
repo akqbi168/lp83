@@ -3,6 +3,8 @@ class HomesController < ApplicationController
     @newsall = News.all.where(published: true).order(year: :desc).order(month: :desc).order(date: :desc)
     @artistsall = Partner.all.where(tag_id: 1).order(name: :asc)
     @partners = Partner.all.where(published: true).order(name: :asc)
+
+    @form = Form.new
   end
 
   def kanri
@@ -15,10 +17,7 @@ class HomesController < ApplicationController
     @partner = Partner.new
   end
 
-  private
-
-  def news_params
-    params.require(:news).permit(:year, :month, :date, :title, :published)
+  def form
+    @forms = Form.all
   end
-
 end

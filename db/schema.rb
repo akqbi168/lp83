@@ -10,12 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_06_040830) do
+ActiveRecord::Schema.define(version: 2020_10_30_073040) do
+
+  create_table "forms", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.text "body"
+    t.boolean "visible", default: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "news", force: :cascade do |t|
-    t.integer "year", limit: 2199
-    t.integer "month", limit: 12
-    t.integer "date", limit: 31
+    t.integer "year"
+    t.integer "month"
+    t.integer "date"
     t.string "title"
     t.boolean "published"
     t.datetime "created_at", null: false
@@ -27,7 +36,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_040830) do
     t.string "link"
     t.string "name"
     t.integer "tag_id"
-    t.boolean "published"
+    t.boolean "published", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

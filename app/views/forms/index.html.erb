@@ -1,0 +1,78 @@
+<div class="wrapper min-h-100">
+  <h2 id="title" class="create-subtitle">▼お問い合わせ▼</h2>
+
+  <% unless Form.exists?(visible: true) %>
+    <p class="form-no-message">（新規メッセージはありません）</p>
+  <% else %>
+    <table class="form-table clearfix">
+      <div class="tr">
+        <tr>
+          <th class="form-thtd" rowspan="2">ID</th>
+          <th class="form-thtd">送信時刻</th>
+          <th class="form-thtd">お名前</th>
+          <th class="form-thtd">email</th>
+          <th class="form-thtd" rowspan="2">操作<br><span style="font-size: 0.5em;">▼▼</span></th>
+        </tr>
+        <tr>
+          <td class="form-thtd" colspan="3">お問い合わせ内容</td>
+        </tr>
+      </div>
+
+      <% @forms.where(visible: true).each do |f| %>
+      <div class="tr">
+        <tr>
+          <td class="form-thtd" rowspan="2"><%= f.id %></td>
+          <td class="form-thtd"><%= f.created_at.to_s(:datetime_jp) %></td>
+          <td class="form-thtd"><%= f.name %></td>
+          <td class="form-thtd"><%= f.email %></td>
+          <td class="form-thtd" rowspan="2">
+            <%= link_to '非表示', form_path(f.id), :method => :put, class: "form-a-visible" %>
+          </td>
+        </tr>
+        <tr>
+          <td class="form-thtd" colspan="3"><%= f.body %></span></td>
+        </tr>
+      </div>
+      <% end %>
+    </table>
+  <% end %>
+
+  <h2 id="title" class="create-subtitle">▽非表示済み▽</h2>
+
+  <% unless Form.exists?(visible: false) %>
+    <p class="form-no-message">（非表示メッセージはありません）</p>
+  <% else %>
+    <table class="form-table clearfix">
+      <div class="tr">
+        <tr>
+          <th class="form-thtd" rowspan="2">ID</th>
+          <th class="form-thtd">送信時刻</th>
+          <th class="form-thtd">お名前</th>
+          <th class="form-thtd">email</th>
+          <th class="form-thtd" rowspan="2">操作<br><span style="font-size: 0.5em;">▼▼</span></th>
+        </tr>
+        <tr>
+          <td class="form-thtd" colspan="3">お問い合わせ内容</td>
+        </tr>
+      </div>
+
+      <% @forms.where(visible: false).each do |f| %>
+      <div class="tr">
+        <tr>
+          <td class="form-thtd" rowspan="2"><span style="text-align:center;"><%= f.id %></span></td>
+          <td class="form-thtd"><%= f.created_at.to_s(:datetime_jp) %></td>
+          <td class="form-thtd"><%= f.name %></td>
+          <td class="form-thtd"><%= f.email %></td>
+          <td class="form-thtd" rowspan="2">
+            <%= link_to '非表示', form_path(f.id), :method => :put, class: "form-a-visible" %>
+          </td>
+        </tr>
+        <tr>
+          <td class="form-thtd" colspan="3"><%= f.body %></td>
+        </tr>
+      </div>
+      <% end %>
+    </table>
+  <% end %>
+
+</div>

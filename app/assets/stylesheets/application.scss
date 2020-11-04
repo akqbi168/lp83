@@ -318,12 +318,12 @@ h4 {
   display: inline;
   /*画像エフェクト*/
   overflow: hidden;
-  cursor: pointer;
 }
 
-.cast-box:hover {
+.cast-box a:hover {
   opacity: 0.6;
   transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 .cast-image {
@@ -568,6 +568,75 @@ h4 {
 .text-center {
   text-align: center;
 }
+
+
+
+/* form */
+.form-table {
+  width: 800px;
+  margin: 0 auto 200px;
+  border-collapse: collapse;
+}
+
+.form-thtd {
+  min-height: 28px;
+  border: 1px dashed #CCC;
+  padding: 0 4px;
+}
+
+tr:first-child .form-thtd:first-child {
+  width: 30px;
+}
+.form-thtd:nth-child(2) {
+  width: 200px;
+  /*word-break: break-all;*/
+}
+.form-thtd:nth-child(3) {
+  width: 200px;
+}
+.form-thtd:nth-child(4) {
+  width: 200px;
+}
+.form-thtd:nth-child(5) {
+  width: 80px;
+  text-align: center;
+  border-top: 3px solid #CCC;
+  border-right: 3px solid #CCC;
+  border-bottom: 3px solid #CCC;
+}
+tr:nth-child(2) .form-thtd:first-child {
+  width: 760px;
+}
+
+// 奇数のtr
+tr:nth-child(2n+1) {
+  border-top: 3px solid #CCC;
+  border-left: 3px solid #CCC;
+}
+// tr:nth-child(2n) {
+  // border-right: 3px solid #CCC;
+// }
+.form-thtd:first-child {
+  border-bottom: 3px solid #CCC;
+}
+
+.form-a-visible {
+}
+
+.form-a-visible:hover {
+  cursor: pointer;
+  color: #AAA;
+  transition: 0.3s;
+}
+
+.form-no-message {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+
+
+
 
 
 
@@ -895,12 +964,12 @@ h4 {
     /*display: inline;*/
     /*画像エフェクト*/
     /*overflow: hidden;*/
-    /*cursor: pointer;*/
   }
 
-  .cast-box:hover {
+  .cast-box a:hover {
     /*opacity: 0.6;*/
     /*transition-duration: 0.4s;*/
+    /*cursor: pointer;*/
   }
 
   .cast-image {

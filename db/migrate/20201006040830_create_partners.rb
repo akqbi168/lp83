@@ -6,7 +6,7 @@ class CreatePartners < ActiveRecord::Migration[5.2]
       t.string :link
       t.string :name
       t.integer :tag_id
-      t.boolean :published
+      t.boolean :published, default: false
       t.timestamps
     end
   end

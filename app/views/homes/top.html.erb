@@ -222,7 +222,9 @@
 
       <div class="ticket-area">
 
-        <form class="ticket-box-text">
+
+
+        <form class="ticket-box-text" style="display: none">
           <div class="ticket-box">
             <label for="name">お名前</label><br>
             <input id="name" type="text" name="name" placeholder="ポマト　太郎" class="w100 h20px blk">
@@ -241,20 +243,30 @@
           <%= button_to "送信", {type: "submit", name: "button", value: "送信"}, class: "ticket-area-button" %>
         </form>
 
+
+
+        <%= form_for @form do |f| %>
+          <div class="ticket-box">
+            <h4>お名前</h4>
+            <%#= f.text_field :name, {id:"name", type:"text", name:"name", placeholder:"ポマト　太郎", class:"w100 h20px blk"} %>
+            <%= f.text_field :name, class:"w100 h20px blk" %>
+          </div>
+
+          <div class="ticket-box">
+            <h4>メールアドレス</h4>
+            <%#= f.text_field :email, {id:"email", type:"text", name:"email", placeholder:"example@pomato.co.jp", class:"w100 h20px blk"} %>
+            <%= f.text_field :email, class:"w100 h20px blk" %>
+          </div>
+
+          <div class="ticket-box">
+            <h4>お問い合わせ内容</h4>
+            <%= f.text_area :body, class:"w100 h100px blk" %>
+          </div>
+
+          <%= f.submit '送信', class: "ticket-area-button" %>
+        <% end %>
+
       </div>
-
-      <%#= form_for @partner do |f| %>
-
-          <!-- <h4>お名前</h4> -->
-          <%#= f.text_field :link, style: "width:500px" %>
-
-          <!-- <h4>お問い合わせ内容</h4> -->
-          <%#= f.text_area :name, style: "width:500px; height: 200px" %>
-
-          <!-- <br><br> -->
-          <%#= f.submit '送信' %>
-      <%# end %>
-
     </div>
   </div>
 
