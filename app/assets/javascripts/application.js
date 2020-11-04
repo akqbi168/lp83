@@ -47,8 +47,9 @@ $(document).ready(function(){
   // 関数：スムーススクロール
   // 指定したアンカー(#ID)へアニメーションでスクロール
   function scrollToAnker(hash) {
+    var adjust = -100;
     var target = $(hash);
-    var position = target.offset().top;
+    var position = target.offset().top + adjust;
     $('body,html').stop().animate({scrollTop:position}, 1000);
   }
 })
